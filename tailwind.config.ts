@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {
+        cuPrimary: 'hsl(var(--cu-primary))',
+        cuText: 'hsl(var(--cu-text))',
+        cuBackground: 'hsl(var(--cu-background))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -71,6 +74,9 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      fontFamily: {
+        BebasNeue: ['Bebas Neue', 'sans-serif'],
       },
     },
   },

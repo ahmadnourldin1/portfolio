@@ -45,5 +45,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   // Memoize the context value to prevent unnecessary re-renders
   const value = useMemo(() => ({ user, loading }), [user, loading])
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
+  return (
+    <AuthContext.Provider value={value}>
+      {loading ? (
+        <div className="w-full h-screen flex justify-center items-center">
+          Loading...
+        </div>
+      ) : null}
+      {children}
+    </AuthContext.Provider>
+  )
 }
