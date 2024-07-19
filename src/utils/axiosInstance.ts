@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 
 // Create an instance of Axios with default configuration
 const axiosInstance = axios.create({
@@ -8,6 +8,6 @@ const axiosInstance = axios.create({
     'Content-Type': 'application/json',
     // Add any other default headers here
   },
-});
+})
 
-export default axiosInstance;
+export default axiosInstance

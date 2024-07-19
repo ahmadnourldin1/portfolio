@@ -8,8 +8,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jsx-a11y/recommended",
-    // "plugin:prettier/recommended"
+    "plugin:jsx-a11y/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -17,8 +16,7 @@
     "react",
     "react-hooks",
     "import",
-    "jsx-a11y",
-    // "prettier"
+    "jsx-a11y"
   ],
   "settings": {
     "react": {
@@ -26,15 +24,12 @@
     },
     "import/resolver": {
       "alias": {
-        "map": [
-          ["@", "./"]
-        ],
+        "map": [["@", "./"]],
         "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
       }
     }
   },
   "rules": {
-    // Removed the prettier/prettier rule to disable Prettier formatting issues
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
