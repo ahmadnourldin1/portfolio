@@ -2,6 +2,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import React, { useMemo } from 'react'
 
+import Navbar from '@/common/navbar'
 import { AuthProvider } from '@/context/AuthContext'
 
 type props = {
@@ -15,7 +16,7 @@ const AppLayout: React.FC<props> = ({ children }) => {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <main className="w-full min-h-screen flex justify-start items-center flex-col">
-          {/* navbar */}
+          <Navbar />
           {children}
           {/* footer */}
         </main>

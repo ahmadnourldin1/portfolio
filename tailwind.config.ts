@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {
+        cuPrimary: 'hsl(var(--cu-primary))',
+        cuText: 'hsl(var(--cu-text))',
+        cuBackground: 'hsl(var(--cu-background))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
