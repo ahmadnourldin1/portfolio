@@ -71,3 +71,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+svg {
+  @apply w-full h-full;
+}
