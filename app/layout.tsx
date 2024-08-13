@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={firaCode.className}>
+      <body className={firaCode.className + " bg-background"}>
         {/* <Navbar /> */}
         <main className="w-full min-h-screen ">
           {children}

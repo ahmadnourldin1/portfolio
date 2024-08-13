@@ -13,6 +13,7 @@ const config: Config = {
         white: "var(--white)",
         grey: "var(--grey)",
         background: "var(--background)",
+        backgroundSecondary: "var(--background-secondary)",
       },
       fontSize: {
         small: "var(--font-size-small)",
