@@ -6,6 +6,27 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-first : #01080E;
+  --primary-second : #011627;
+  --primary-third : #011221;
+  --secondary-first : #607B96;
+  --secondary-second : #3C9D93;
+  --secondary-third : #4D5BCE;
+  --secondary-fourth : #FFFFFF;
+  --accent-first : #FEA55F;
+  --accent-second : #43D9AD;
+  --accent-third : #E99287;
+  --accent-fourth : #C98BDF;
+  --lines : #1E2D3D;
+  --gradient-first : #4D5BCE;
+  --gradient-second : #43D9AD;
+
+  --font-size-small : 14px;
+  --font-size-medium : 16px;
+  --font-size-large : 18px;
+  --font-size-x-large : 32px;
+  --font-size-xx-large : 62px;
+
 }
 
 @media (prefers-color-scheme: dark) {
