@@ -10,16 +10,16 @@ export const linksMap: Readonly<Record<NavbarLinksEnums, props>> = {
         name : "Home",
         link : "/"
     },
-    [NavbarLinksEnums.ABOUT] : {
-        name : "About",
-        link : "/about"
+    [NavbarLinksEnums.WORKS] : {
+        name : "Work",
+        link : "/work"
     },
-    [NavbarLinksEnums.PROJECTS] : { 
-        name : "Projects",
-        link : "/projects"
+    [NavbarLinksEnums.ABOUT_ME] : { 
+        name : "About-me",
+        link : "/about-me"
     },
-    [NavbarLinksEnums.CONTACT] : {
-        name : "Contact",
+    [NavbarLinksEnums.CONTACTS] : {
+        name : "Contacts",
         link : "/contact"   
     }
 }

@@ -1,3 +1,6 @@
 export enum NavbarLinksEnums {
-    HOME , ABOUT , PROJECTS , CONTACT
+    HOME = 'HOME',
+    WORKS = 'WORKS',
+    ABOUT_ME = 'ABOUT_ME',
+    CONTACTS = 'CONTACTS'
 }
