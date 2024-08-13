@@ -3,9 +3,12 @@ import { NavbarLinksEnums } from '@/types/enums/navbar-links-enum';
 import { linksMap } from '@/types/mapping/navbar-links-map';
 import cn from '@/utils/cn';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation'
 
 const Links = () => {
-  const [activeLink, setActiveLink] = useState<NavbarLinksEnums>(NavbarLinksEnums.HOME);
+  const pathname = usePathname();
+
+  console.log(pathname);
 
   return (
     <ul className='flex gap-5 items-center justify-center'>
@@ -16,8 +19,7 @@ const Links = () => {
         return (
           <li 
             key={link} 
-            className={cn('lowercase', { 'text-primary': activeLink === linkEnumValue })}
-            onClick={() => setActiveLink(linkEnumValue)}
+            className={cn('lowercase', { 'text-primary': pathname === link })}
           >
             <a href={link}>
               <span className="text-primary">#</span>
