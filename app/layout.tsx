@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+import Navbar from "@/components/common/Navbar";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -16,12 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={firaCode.className + " bg-background"}>
-        {/* <Navbar /> */}
-        <main className="w-full min-h-screen ">
+      <body className={firaCode.className + " bg-background w-full min-h-screen flex justify-center"}>
+        <main className="h-full w-full md:mx-24 md:bg-backgroundSecondary flex flex-col justify-center items-center">
+        <Navbar />
           {children}
-        </main>
         {/* <Footer /> */}
+        </main>
         </body>
     </html>
   );
