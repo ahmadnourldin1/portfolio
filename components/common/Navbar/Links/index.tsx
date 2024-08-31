@@ -2,24 +2,26 @@
 import { NavbarLinksEnums } from '@/types/enums/navbar-links-enum';
 import { linksMap } from '@/types/mapping/navbar-links-map';
 import cn from '@/utils/cn';
-import { useState } from 'react';
 import { usePathname } from 'next/navigation'
 import LanguageSwitch from './LanguageSwitch';
+import { useBreakpoint } from '@/components/hooks/use-breakpoint';
+import SocialMediaSideLine from '../SocialMediaSideLine';
 
 const Links = () => {
   const pathname = usePathname();
+  const {isMobile} = useBreakpoint();
 
   console.log(pathname);
 
   return (
-    <ul className='flex gap-5 items-center justify-center'>
+    <ul className='md:flex-row md:top-1 md:relative md:w-auto md:h-auto md:items-center md:justify-center w-full flex flex-col fixed left-0 top-16 h-full bg-background gap-5 justify-start items-start pt-16 md:pt-0 pl-5 md:pl-0'>
       {Object.values(linksMap).map((item) => {
         const { name, link } = item;
 
         return (
-          <li 
-            key={link} 
-            className={cn('lowercase text-grey hover:text-white transition-all', { 'text-white': pathname === link })}
+          <li
+            key={link}
+            className={cn('lowercase text-grey hover:text-white transition-all md:text-base text-2xl', { 'text-white': pathname === link })}
           >
             <a href={link}>
               <span className="text-primary">#</span>
@@ -30,6 +32,7 @@ const Links = () => {
       })}
       <LanguageSwitch />
     </ul>
+
   );
 }
 
