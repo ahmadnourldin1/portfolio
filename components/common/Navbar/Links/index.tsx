@@ -1,15 +1,11 @@
 "use client"
-import { NavbarLinksEnums } from '@/types/enums/navbar-links-enum';
 import { linksMap } from '@/types/mapping/navbar-links-map';
 import cn from '@/utils/cn';
 import { usePathname } from 'next/navigation'
 import LanguageSwitch from './LanguageSwitch';
-import { useBreakpoint } from '@/components/hooks/use-breakpoint';
-import SocialMediaSideLine from '../SocialMediaSideLine';
 
 const Links = () => {
   const pathname = usePathname();
-  const {isMobile} = useBreakpoint();
 
   console.log(pathname);
 
