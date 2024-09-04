@@ -19,11 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={firaCode.className + " bg-background w-full min-h-screen flex justify-center"}>
         <main className="h-full w-full md:mx-24 md:bg-backgroundSecondary flex flex-col justify-center items-center">
-        <Navbar />
+          <Navbar />
           {children}
-        {/* <Footer /> */}
+          {/* <Footer /> */}
         </main>
-        </body>
+      </body>
     </html>
   );
 }

@@ -8,7 +8,7 @@ interface props {
 
 const Modal: React.FC<props> = ({setLang}) => {
   return (
-    <ul className='flex flex-col absolute top-7 left-0 border-white border-[2px] px-1 !bg-background'>
+    <ul className='flex flex-col absolute top-10 md:top-7 left-0 border-white border-[2px] px-1 !bg-background w-12 md:w-auto items-center'>
       {
         Object.values(languagesMap).map((item) => {
           const { name } = item;
