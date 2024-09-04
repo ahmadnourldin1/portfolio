@@ -4,13 +4,18 @@ import cn from '@/utils/cn';
 import { usePathname } from 'next/navigation'
 import LanguageSwitch from './LanguageSwitch';
 
-const Links = () => {
+interface props{
+  setIsNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>
+  isNavbarOpen: boolean
+}
+
+const Links: React.FC<props> = ({ setIsNavbarOpen, isNavbarOpen }) => {
   const pathname = usePathname();
 
   console.log(pathname);
 
   return (
-    <ul className='md:flex-row md:top-1 md:relative md:w-auto md:h-auto md:items-center md:justify-center w-full flex flex-col fixed left-0 top-16 h-full bg-background gap-5 justify-start items-start pt-16 md:pt-0 pl-5 md:pl-0'>
+    <ul className={cn('md:flex-row md:top-1 md:relative md:w-auto md:h-auto md:items-center md:justify-center w-full flex flex-col fixed left-0 top-16 h-full bg-background gap-5 justify-start items-start pt-16 md:pt-0 pl-5 md:pl-0', { 'hidden': !isNavbarOpen })}>
       {Object.values(linksMap).map((item) => {
         const { name, link } = item;
 
@@ -26,7 +31,7 @@ const Links = () => {
           </li>
         );
       })}
-      <LanguageSwitch />
+      <LanguageSwitch  />
     </ul>
 
   );
