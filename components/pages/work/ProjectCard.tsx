@@ -13,7 +13,7 @@ interface props {
 
 const ProjectCard: React.FC<props> = ({ image, techStack, title, description, isLive }) => {
     return (
-        <div className="w-full md:w-[330px] flex justify-center items-center flex-col border-grey border-[1px]">
+        <div className="w-[330px] flex justify-center items-center flex-col border-grey border-[1px]">
             <Image className="w-full object-cover" src={image} alt="project image" />
             <div className="w-full flex gap-3 px-2 py-2 border-b-[1px]">
                 {techStack.map((tech, index) => (

@@ -14,8 +14,12 @@ const Work = () => {
         <p className="text-grey">List of my projects</p>
       </div>
       <h1 className="text-3xl"><span className="text-primary">#</span>complete-apps</h1>
-      <div className="w-full flex justify-center flex-wrap gap-5 mt-5">
+      <div className="w-full flex justify-start flex-wrap gap-5 mt-5">
         <ProjectCard image={Image1} techStack={['HTML', 'SCSS', 'Python', 'Flask']} title={'ChertNodes'} description={'Minecraft servers hosting '} isLive={'google.com'} />
+        <ProjectCard image={Image2} techStack={['CSS', 'Express', 'Node.js']} title={'Kahoot Answers Viewer'} description={'Get answers to your kahoot quiz '} isLive={'google.com'} />
+        <ProjectCard image={Image3} techStack={['React', 'Express', 'Discord.js', 'Node.js']} title={'Kahoot Answers Viewer'} description={'Get answers to your kahoot quiz '} isLive={'google.com'} />
+        <ProjectCard image={Image4} techStack={['HTML', 'CSS', "JS"]} title={'Kotik Bot'} description={'Multi-functional discord bot '} isLive={'google.com'} />
+        <ProjectCard image={Image5} techStack={['Vue', 'TS', "Less"]} title={'Portfolio'} description={'You’re using it rn '} isLive={'google.com'} />
       </div>
       <div className="h-80"></div>
     </div>
