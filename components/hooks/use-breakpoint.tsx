@@ -10,8 +10,8 @@ export const useBreakpoint = () => {
     useEffect(() => {
         const handleResize = () => {
             setBreakpoints({
-                isMobile: window.innerWidth < 640,
-                isTablet: window.innerWidth >= 640 && window.innerWidth < 1024,
+                isMobile: window.innerWidth < 768,
+                isTablet: window.innerWidth >= 768 && window.innerWidth < 1024,
                 isDesktop: window.innerWidth >= 1024
             });
         }
