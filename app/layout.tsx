@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/common/Navbar";
+import SVG from "@/components/common/SVG";
+import Times3Icon from "@/components/icons/Times3Icon";
+import OneCube from "@/components/icons/OneCube";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -23,6 +26,10 @@ export default function RootLayout({
           {children}
           {/* <Footer /> */}
         </main>
+        <SVG icon={<Times3Icon />} className="w-15 h-15 absolute left-4 top-[400px] md:block hidden" />
+        <SVG icon={<OneCube />} className="w-15 h-15 absolute right-0 top-[180px] md:block hidden" />
+        <SVG icon={<Times3Icon />} className="w-15 h-15 absolute right-4 top-[850px] md:block hidden" />
+        <SVG icon={<OneCube className="fill-primary" />} className="w-15 h-15 absolute left-0 top-[600px] rotate-180 md:block hidden" />
       </body>
     </html>
   );
