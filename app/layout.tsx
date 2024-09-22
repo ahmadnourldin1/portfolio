@@ -5,6 +5,7 @@ import Navbar from "@/components/common/Navbar";
 import SVG from "@/components/common/SVG";
 import Times3Icon from "@/components/icons/Times3Icon";
 import OneCube from "@/components/icons/OneCube";
+import Footer from "@/components/common/Footer";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         <main className="h-full w-full md:mx-24 md:bg-backgroundSecondary flex flex-col justify-center items-center">
           <Navbar />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </main>
         <SVG icon={<Times3Icon />} className="w-15 h-15 absolute left-4 top-[400px] md:block hidden" />
         <SVG icon={<OneCube />} className="w-15 h-15 absolute right-0 top-[180px] md:block hidden" />
