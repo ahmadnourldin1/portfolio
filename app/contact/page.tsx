@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-        <h1 className="text-3xl mt-6"><span className="text-primary">#</span>contacts</h1>
+        {/* <h1 className="text-3xl mt-6"><span className="text-primary">#</span>contacts</h1> */}
     </div>
   )
 }
