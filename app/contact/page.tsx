@@ -23,11 +23,11 @@ const Contact = () => {
             <p className="text-white">Message me here</p>
             <div className="flex justify-start items-center flex-row gap-2">
               <SVG icon={<DiscordIcon />} className="w-5 h-5" />
-              <p className="text-grey">Elias#1234</p>
+              <p className="text-grey">Ahmad#1234</p>
             </div>
             <div className="flex justify-start items-center flex-row gap-2">
               <SVG icon={<EmailIcon />} className="w-5 h-5" />
-              <p className="text-grey">elias@elias-dev.ml</p>
+              <p className="text-grey">ahmadnourldinprs@gmail.com</p>
             </div>
           </div>
         </div>
