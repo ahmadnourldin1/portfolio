@@ -29,6 +29,12 @@ const AboutMe = () => {
         <SkillItem title="Frameworks" items={['React', 'Next.js', 'NestJS']} />
       </div>
 
+      <p className="mt-8 text-xs text-grey max-w-2xl mx-auto text-center">
+        Design credit: Elias Devis — <a href="https://github.com/EliasDevis/EliasDevis.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      {/* https://www.figma.com/community/file/1164933568884615740/portfolio */}
+
+
       {/* <div className="h-96"></div> */}
     </div>
   )
