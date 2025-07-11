@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false)
 
   return (
-    <div className="w-full h-20 flex justify-between items-center pl-5 md:pl-0 z-20">
+    <div className="w-full h-20 flex justify-between items-center pl-5 md:pl-0 z-50">
       <Logo />
       <Links isNavbarOpen={isNavbarOpen} setIsNavbarOpen={setIsNavbarOpen} />
       <SocialMediaSideLine setIsNavbarOpen={setIsNavbarOpen} isNavbarOpen={isNavbarOpen} />

@@ -14,7 +14,7 @@ const Links: React.FC<props> = ({ setIsNavbarOpen, isNavbarOpen }) => {
   const pathname = usePathname();
   const {isMobile} = useBreakpoint();
 
-  console.log(pathname);
+  // console.log(pathname);
 
   return (
     <ul className={cn('md:flex-row md:top-1 md:relative md:w-auto md:h-auto md:items-center md:justify-center w-full flex flex-col fixed left-0 top-16 h-full bg-background gap-5 justify-start items-start pt-16 md:pt-0 pl-5 md:pl-0', { 'hidden': !isNavbarOpen && isMobile })}>
@@ -33,7 +33,7 @@ const Links: React.FC<props> = ({ setIsNavbarOpen, isNavbarOpen }) => {
           </li>
         );
       })}
-      <LanguageSwitch  />
+      {/* <LanguageSwitch  /> */}
     </ul>
 
   );
