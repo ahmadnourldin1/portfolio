@@ -2,7 +2,7 @@ import PrimaryButton from "@/components/common/buttons/PrimaryButton";
 import SVG from "@/components/common/SVG";
 import CrossCubes from "@/components/icons/CrossCubes";
 import Image from "next/image";
-import ProfilePicture from "../public/body-photo.png";
+import ProfilePicture from "../public/bg.png";
 import CircleGroup from "@/components/icons/CircleGroup";
 import QuotesIcon from "@/components/icons/QuotesIcon";
 import Link from "next/link";
