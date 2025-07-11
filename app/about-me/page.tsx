@@ -22,12 +22,13 @@ const AboutMe = () => {
         <h1 className="text-3xl"><span className="text-primary">#</span>skills</h1>
       </div>
       <div className="w-full flex items-start flex-wrap gap-5">
-        <SkillItem title="Languages" items={['TypeScript', 'Lua', 'Python', 'JavaScript']} />
-        <SkillItem title="Other" items={['HTML', 'CSS', 'EJS', 'SCSS', 'REST', 'Jinja']} />
-        <SkillItem title="Tools" items={['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font', "Awesome", "KDE", "Fish"]} />
-        <SkillItem title="Databases" items={['SQLite', 'PostgreSQL', 'Mongo']} />
-        <SkillItem title="Frameworks" items={['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js']} />
+        <SkillItem title="Languages" items={['Python', 'JavaScript', 'Dart', 'Java']} />
+        <SkillItem title="Other" items={['HTML', 'CSS', 'MySQL', 'REST', 'WebSockets']} />
+        <SkillItem title="Tools" items={['VSCode', 'Git', 'GitHub', 'Windows']} />
+        <SkillItem title="Databases" items={['SQLite', 'PostgreSQL']} />
+        <SkillItem title="Frameworks" items={['React', 'Next.js', 'NestJS']} />
       </div>
+
       {/* <div className="h-96"></div> */}
     </div>
   )
